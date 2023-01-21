@@ -2,7 +2,7 @@
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
-    font-family: sans-serif;
+    font-family: titleFont;
     /* overflow: auto; */
 }
 body{
@@ -12,6 +12,7 @@ a{
     text-decoration: none;
 }
 
+
 /* NAV style */
 
 nav{
@@ -20,7 +21,7 @@ nav{
     /* margin: 0 10px; */
     font-family: navFont;
     position: sticky;
-    z-index: 10000;
+    z-index: 100;
     top: 0;
     right: 0;
 }
@@ -39,6 +40,7 @@ nav .container a{
 /* logo  */
 nav .container .logo{
     font-family: logoFont;
+    margin-left: 1rem;
 }
 nav .container .logo .flipkart a{
     font-size: x-large;
@@ -113,8 +115,6 @@ header img{
 
 header .cards{
     display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
     padding: 1rem 0;
     border: 2px solid var(--color-border-grey);
     background-color: var(--color-white-bg);
@@ -160,7 +160,7 @@ header .card :hover h3 {
     padding: 1.5rem .8rem;
     font-family: navFont;
     font-size: xx-large;
-    z-index: 100;
+    z-index: 10;
 }
 .next{
     right: 0px;
@@ -399,6 +399,73 @@ footer .bottom i{
  font-size: 1rem;
  margin-right: 7px;
 }
+
+/* BARS */
+.bars{
+    color: var(--color-white);
+    position: fixed;
+    z-index: 120;
+    top: 12px;
+    left: 10px;
+    font-size: 1.5rem;
+    display: none;
+}
+.bars:hover{
+    cursor: pointer;
+}
+
+/* SIDE NAV  */
+.side-nav{
+    background-color: var(--color-white-bg);
+    width: 70%;
+    max-width: 300px;
+    height: 100vh;
+    position: absolute;
+    z-index: 200;
+    overflow: hidden;
+    transition: all .5s ease-in-out;
+    width: 0px;
+    display: none;
+}
+/* login  */
+.side-nav .login{
+    color: var(--color-white);
+    background-color: var(--color-brand-blue);
+    padding: 10px;
+    position: relative;
+}
+.side-nav .login i{
+    margin-right: 15px;
+}
+.side-nav .cross{
+    position: absolute;
+    top: 10px;
+    right: 0px;
+    font-size: 1.5rem;
+}
+.side-nav .cross:hover{
+    cursor: pointer;
+}
+
+/* section  */
+.side-nav section{
+    padding: 0 10px;
+    border-bottom: 1px solid var(--color-brown);
+}
+.side-nav section:last-child {
+    border: 0px;
+}
+.side-nav section div{
+    margin: 10px 0;
+    font-size: 12px;
+    font-weight: 500;
+}
+.side-nav section i{
+    margin-right: 10px;
+    font-size: 13px;
+    color: var(--color-brown);
+}
+
 
 
 

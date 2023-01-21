@@ -14,9 +14,23 @@
     .under-price-section .cards :nth-child(4){
         display: none;
     }
+    .side-nav{
+        display: block;
+    }
+    .bars{
+        display: block;
+    }
 }
 
 @media only screen and (max-width: 430px) {
+    /* hover deactive */
+    .sec-card img:hover{
+        transform: scale(100%);
+    }
+    .f-b-section .sec-card:hover{
+        transform: scale(100%);
+    }
+    
     /* NAV SEC  */
     nav .container{
         width: 100%;
@@ -28,20 +42,40 @@
 
     nav .left {
         display: flex;
+        justify-content: flex-end;
         width: 100%;
+        margin-left: 25px;
     }
     nav .left .search input{
         width: calc(100% - 35px) !important;
         margin-right: 10px;
     }
     nav .left .search{
-        flex: 60% 0 1;
+        flex: 60% 1 1;
+    }
+    nav .left button{
+        font-size: medium !important;
     }
 
     /* HEADER  */
-    header .card{
-        flex: 25% 1 1;
+    header img{
+        max-width: 45px;
     }
+    header .card h3{
+        font-size: 10px;
+    }
+    header .cards{
+        overflow: auto;
+        padding: 5px 0;
+    }
+    header .card{
+        flex: 25% 0 0;
+    }
+    header .cards::-webkit-scrollbar{
+        width: 0;
+        height: 0px;
+    }
+    
 
     /* PREVIOUS NEXT BTN  */
     .previous,.next{

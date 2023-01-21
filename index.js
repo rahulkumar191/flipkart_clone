@@ -76,3 +76,16 @@ for (let i = 0; i < leftBtns.length; i++) {
   });
 
 }
+
+// SIDE NAV 
+
+const cross=document.querySelector('.cross');
+const bars=document.querySelector('.bars');
+const sideNav=document.querySelector('.side-nav');
+
+cross.addEventListener('click',function(){
+  sideNav.style.width=`${0}px`;
+});
+bars.addEventListener('click',function(){
+  sideNav.style.width='70%';
+});
