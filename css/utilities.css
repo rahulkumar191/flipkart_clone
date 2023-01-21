@@ -1,39 +1,39 @@
 
 @font-face{
     font-family: logoFont;
-    src: url(fonts/Roboto-BoldItalic.ttf);
+    src: url(../fonts/Roboto-BoldItalic.ttf);
 }
 @font-face{
     font-family: navFont;
-    src: url(fonts/Roboto-Bold.ttf);
+    src: url(../fonts/Roboto-Bold.ttf);
 }
 @font-face{
     font-family: exploreFont;
-    src: url(fonts/Roboto-MediumItalic.ttf);
+    src: url(../fonts/Roboto-MediumItalic.ttf);
 }
 @font-face{
     font-family: headerFont;
-    src: url(fonts/Roboto-Light.ttf);
+    src: url(../fonts/Roboto-Light.ttf);
 }
 @font-face{
     font-family: offerFont;
-    src: url(fonts/Roboto-Thin.ttf);
+    src: url(../fonts/Roboto-Thin.ttf);
 }
 @font-face{
     font-family: priceFont;
-    src: url(fonts/Roboto-Regular.ttf);
+    src: url(../fonts/Roboto-Regular.ttf);
 }
 @font-face{
     font-family: titleFont;
-    src: url(fonts/Roboto-Medium.ttf);
+    src: url(../fonts/Roboto-Medium.ttf);
 }
 @font-face{
     font-family: boldBlack;
-    src: url(fonts/Roboto-Bold.ttf);
+    src: url(../fonts/Roboto-Bold.ttf);
 }
 @font-face{
     font-family: footerFont;
-    src: url(fonts/Roboto-Regular.ttf);
+    src: url(../fonts/Roboto-Regular.ttf);
 }
 
 

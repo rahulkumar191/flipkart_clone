@@ -105,7 +105,7 @@ nav .container .right .login a{
 header img{
     max-width: 70px;
     height: auto;
-    background-image: url(images/hpbg.png);
+    background-image: url(../images/hpbg.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
