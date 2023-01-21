@@ -1,0 +1,439 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    /* overflow: auto; */
+}
+body{
+    background-color: #f1f3f6;
+}
+a{
+    text-decoration: none;
+}
+
+/* NAV style */
+
+nav{
+    background-color: var(--color-brand-blue);
+    padding: .5rem;
+    /* margin: 0 10px; */
+    font-family: navFont;
+    position: sticky;
+    z-index: 10000;
+    top: 0;
+    right: 0;
+}
+nav .container{
+    display: flex;
+    width: fit-content;
+    max-width: 100%;
+    margin: 0 auto;
+    align-items: center;
+    /* flex-wrap: wrap; */
+}
+nav .container a{
+    color: var(--color-white);
+}
+
+/* logo  */
+nav .container .logo{
+    font-family: logoFont;
+}
+nav .container .logo .flipkart a{
+    font-size: x-large;
+    font-family: logoFont;
+    text-shadow: 1px 1px 2px var(--color-white);
+}
+nav .container .logo .explore{
+   font-size: .7rem;
+   font-family: exploreFont;
+}
+nav .container .logo .explore:hover{
+    text-decoration: underline;
+}
+nav .container .logo .plus{
+    color: var( --color-primary-yellow);
+    font-weight: bold;
+}
+
+
+/* left  */
+nav button,nav input{
+    all: unset;
+    font-family: sans-serif;
+    font-size: small;
+}
+nav .container .left{
+    display: flex;
+    align-items: center;
+    column-gap: 1rem;
+}
+nav .container .left .search{
+    background-color: var(--color-white-bg);
+    padding: .5rem 1rem;
+    border-radius: 1.5px;
+}
+nav .container .left .search input{
+    width: 320px;
+}
+nav .container .left .search button{
+    color: var(--color-brand-blue);
+    /* font-family: navFont; */
+    font-size: large;
+}
+
+
+/* righr */
+nav .container .right{
+    display: flex;
+    margin-left: 1rem;
+    column-gap: 2rem;
+}
+nav .container .right .login a{
+    color: var(--color-brand-blue);
+    background-color: var(--color-white-bg);
+    padding: 6px 2.4rem;
+    border-radius: 1.5px;
+}
+
+
+/* HEADER  */
+/* header{
+    margin: 0 10px;
+} */
+header img{
+    max-width: 70px;
+    height: auto;
+    background-image: url(images/hpbg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+header .cards{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    padding: 1rem 0;
+    border: 2px solid var(--color-border-grey);
+    background-color: var(--color-white-bg);
+}
+header .card{
+    flex: 10% 1 1;
+    text-align: center;
+}
+header .card h3{
+    font-size: small;
+    font-family: headerFont;
+    color: var(--color-black);
+}
+header .card :hover h3 {
+    color: var(--color-brand-blue);
+}
+
+
+/* SLIDER  */
+ .slider img{
+    width: 100%;
+    height: 100%;
+}
+
+.slider{
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    margin: 10px;
+    background-color: var(--color-white-bg);
+}
+.slide{
+    /* min-width: calc(100% - 20px); */
+    flex: 100% 1 0;
+    height: 280px;
+}
+
+.previous,.next{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: var(--color-white-bg);
+    padding: 1.5rem .8rem;
+    font-family: navFont;
+    font-size: xx-large;
+    z-index: 100;
+}
+.next{
+    right: 0px;
+}
+
+
+/* TOP OFFER SLIDER  */
+
+.t-o-section{
+    margin: 10px;
+    background-color: var(--color-white-bg);
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+
+/* top heading  */
+.top-heading{
+    flex: 20% 0 0;
+    font-family: boldBlack;
+    font-size: 1.5rem;
+}
+.view-all{
+    margin-top: 1rem;
+}
+.view-all a{
+    font-size: .8rem;
+    font-weight: bold;
+    background-color: var(--color-brand-blue);
+    color: var(--color-white);
+    padding: 10px 15px;
+}
+
+/* sec-slider */
+.sec-slider{
+    position: relative;
+    padding: 2rem 0;
+    overflow: hidden;
+}
+
+/* cards  */
+.sec-cards::-webkit-scrollbar{
+    width: 0;
+    height: 0px;
+}
+.sec-cards{
+    display: flex;
+    gap: 1rem;
+    overflow: auto;
+    position: relative;
+}
+
+.sec-card{
+    flex: 20% 0 0;
+    /* padding: 0 1.5rem; */
+}
+.sec-card img{
+    width: auto;
+    height: 150px;
+    transition: all .3s;
+}
+.sec-card img:hover{
+    transform: scale(1.1);
+}
+.title{
+    font-family: titleFont;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-top: 1rem;
+}
+.offer{
+    font-family: offerFont;
+    font-size: 1rem;
+    color: var(--color-offer-green);
+    margin-top: .5rem;
+}
+.price{
+    font-family: priceFont;
+    color: var(--color-brown);
+    font-weight: 600;
+    margin-top: .5rem;
+}
+
+/* TOP DEALS ON FASHION */
+.t-d-f-section{
+    margin: 10px;
+}
+
+/* SPECIAL OFFER */
+.special-sec{
+    margin: 10px;
+}
+
+.special-cards{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.special-card{
+    flex: 30% 1 1;
+}
+
+/* FEATURED BRANDS */
+.f-b-section{
+    margin: 10px;
+}
+.f-b-section img{
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.f-b-section .sec-card{
+    flex:40% 0 0;
+    position: relative;
+    transition: transform .5s ease-in-out;
+}
+.f-b-section .sec-card img:hover{
+    transform: scale(100%);
+}
+.f-b-section .sec-card:hover{
+    transform: scale(104%);
+}
+.f-b-section .title{
+    background-color: var(--color-brand-blue-lighter);
+    margin: 0;
+    padding: 5px 10px;
+    text-align: left;
+    position: relative;
+    top: -12px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    box-shadow: 0 2px 3px 0 var(--color-border-grey);
+}
+
+/* UNDER PRICE SECTION  */
+.under-price-section{
+    margin: 10PX;
+}
+.under-price-section .cards{
+    display: flex;
+    gap: 10px;
+}
+.under-price-section .card{
+    flex: 25% 1 1;
+    padding: 10px 15px;
+    background-color: var(--color-white-bg);
+}
+.under-price-section a{
+    background-color: var(--color-primary-yellow);
+    display: block;
+    border-radius: 5px;
+    padding: 5px;
+}
+.under-price-section .circle{
+    background-color: var(--color-offer-green);
+    text-align: center;
+    margin: 0px auto;
+    padding-top: 20px;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    zoom: 90%;
+}
+.under-price-section .under{
+    font-family: navFont;
+    color: var(--color-white);
+}
+.under-price-section .price{
+    font-family: navFont;
+    font-size: 2rem;
+    color: var(--color-white);
+    margin: 0px;
+}
+.under-price-section .price::first-letter{
+    font-size: 1rem;
+}
+
+/* FOOTER  */
+footer{
+    background-color: var(--color-brand-footer);
+    color: var(--color-white);
+    font-size: small;
+}
+
+/* .top  */
+footer .top{
+    display: flex;
+    padding: 5% 3%;
+    flex-wrap: wrap;
+}
+footer .top h5{
+    text-transform: uppercase;
+    color: var(--color-brown);
+    margin-bottom: 10px;
+}
+footer .top p{
+    margin-bottom: 10px;
+    font-family: footerFont;
+    font-size: smaller;
+}
+
+/* left  */
+footer .left{
+    display: flex;
+    justify-content: space-around;
+    flex:50% 1 1;
+}
+
+/* .right  */
+footer .right{
+    display: flex;
+    justify-content: space-around;
+    flex:50% 1 1;
+    padding-left: 1rem;
+    border-left: 1px solid var(--color-border-grey);
+    line-height: 15px;
+    letter-spacing: .5px;
+}
+footer .right a{
+    color: var(--color-brand-blue);
+}
+
+/* BOTTOM */
+footer .bottom{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+    padding: 2rem;
+    border-top: 1px solid var(--color-border-grey);
+}
+footer .bottom i{
+ color: var(--color-primary-yellow);
+ font-size: 1rem;
+ margin-right: 7px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

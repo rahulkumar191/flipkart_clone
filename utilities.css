@@ -1,0 +1,70 @@
+
+@font-face{
+    font-family: logoFont;
+    src: url(fonts/Roboto-BoldItalic.ttf);
+}
+@font-face{
+    font-family: navFont;
+    src: url(fonts/Roboto-Bold.ttf);
+}
+@font-face{
+    font-family: exploreFont;
+    src: url(fonts/Roboto-MediumItalic.ttf);
+}
+@font-face{
+    font-family: headerFont;
+    src: url(fonts/Roboto-Light.ttf);
+}
+@font-face{
+    font-family: offerFont;
+    src: url(fonts/Roboto-Thin.ttf);
+}
+@font-face{
+    font-family: priceFont;
+    src: url(fonts/Roboto-Regular.ttf);
+}
+@font-face{
+    font-family: titleFont;
+    src: url(fonts/Roboto-Medium.ttf);
+}
+@font-face{
+    font-family: boldBlack;
+    src: url(fonts/Roboto-Bold.ttf);
+}
+@font-face{
+    font-family: footerFont;
+    src: url(fonts/Roboto-Regular.ttf);
+}
+
+
+:root{
+    --color-brand-blue: #2874f0;
+    --color-brand-blue-lighter: #dfeafd;
+    --color-brand-orange: #fb641b;
+    --color-primary-yellow: #ffe11b;
+    --color-primary-yellow2: #f1d27d;
+    --color-light-black: #172337;
+    --color-brand-footer: #172337;
+    --color-black: #000;
+    --color-white-bg: #fff;
+    --color-border-grey: #e4e7ed;
+    --color-white: #f0f0f0;
+    --color-grey: #d7d7d7;
+    --color-brown: #808080;
+    --color-offer-green: #388e3c;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+}
+.justify-between{
+    justify-content: space-between;
+}
+.justify-around{
+    justify-content: space-around;
+}
+img{
+width: 100%;
+height: auto;
+}

@@ -1,0 +1,138 @@
+@media only screen and (max-width: 930px){
+    nav input{
+        width: fit-content !important;
+    }
+}
+
+@media only screen and (max-width: 800px){
+    nav .right{
+        display: none !important;
+    }
+    nav input{
+        width: 250px !important;
+    }
+    .under-price-section .cards :nth-child(4){
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 430px) {
+    /* NAV SEC  */
+    nav .container{
+        width: 100%;
+        margin: 0;
+    }
+    nav .right{
+        display: none !important;
+    }
+
+    nav .left {
+        display: flex;
+        width: 100%;
+    }
+    nav .left .search input{
+        width: calc(100% - 35px) !important;
+        margin-right: 10px;
+    }
+    nav .left .search{
+        flex: 60% 0 1;
+    }
+
+    /* HEADER  */
+    header .card{
+        flex: 25% 1 1;
+    }
+
+    /* PREVIOUS NEXT BTN  */
+    .previous,.next{
+        font-size: 1rem;
+        padding: 15px 10px;
+    }
+
+    /* /SLIDER */
+    .slide{
+        height: 150px;
+    }
+
+    /* TOP SECCTION  */
+    .t-o-section{
+        align-items: initial;
+    }
+    /* top  */
+    .top-heading{
+        display: flex;
+        justify-content: space-between;
+        margin: 1rem .5rem;
+        font-size: 1rem;
+    }
+    .top-heading .view-all{
+        margin: 0;
+    }
+    .view-all a{
+        font-size: .6rem;
+    }
+
+    /* slider  */
+    .t-o-section .previous,.t-o-section .next{
+        display: none;
+    }
+    .t-o-section .offer{
+        display: none;
+    }
+    .t-o-section .title{
+        margin-top: 5px;
+    }
+    .t-o-section .price{
+        color: var(--color-offer-green);
+        margin-top: 5px;
+    }
+    .sec-card img{
+        width: auto;
+        height: 80px;
+    }
+    .sec-slider{
+        padding: 1rem .5rem;
+    }
+    .t-o-section{
+        flex-direction: column;
+    }
+    .sec-cards{
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    .sec-card{
+        overflow: hidden;
+        padding: 10px 1rem;
+        flex: 40% 1 1;
+        border: 1px solid var(--color-border-grey);
+    }
+
+    /* SPECIAL SEC  */
+    .special-card{
+        flex: 40% 1 1;
+    }
+
+    /* FEATURED SEC  */
+    .f-b-section .sec-card img{
+        width: 100%;
+        height: auto;
+    }
+    .f-b-section .sec-cards{
+        flex-wrap: nowrap;
+    }
+    .f-b-section .sec-card{
+        flex: 100% 0 0;
+        border: 0px;
+    }
+    .f-b-section .previous,.f-b-section .next{
+        display: block;
+    }
+    
+    /* UNDER OFFER SEC  */
+    .under-price-section .cards{
+        flex-wrap: wrap;
+    }
+    .under-price-section .circle{
+        zoom: auto;
+    }
+}
